@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* All */
 * {
     padding: 0;
     margin: 0;
@@ -8,23 +9,17 @@
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+/* Class for calling the flex-box */
 .flex-box {
     display: flex;
 }
 
+/* Defining main with width of 100 viewport. */
 main {
-    height: 100%;
     width: 100vw;
 }
 
-nav {
-    height: 4rem;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #242031;
-}
-
+/* Global */
 button {
     padding: 10px;
     margin-bottom: 10px;
@@ -34,20 +29,53 @@ button {
     border-radius: 5px;
 }
 
-header a,p{
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-}
-
 button:hover {
     cursor: pointer;
     background-color: #2b2738;
 }
 
-#menu-navegacao {
-    list-style: none;
-    background-color: red;
+h2, h3, p {
+    color: antiquewhite;
+    font-size: 3ch;
+    margin-bottom: 5px;
+}
+
+h1 {
+    color: antiquewhite;
+    font-size: 5ch;
+}
+
+/* Nav-bar */
+.navbar-container {
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #242031;
+}
+
+.icon-nav {
+    margin-left: 2rem;
+}
+
+/* Header */
+.header-container a{
+    text-decoration: none;
+}
+
+.header-container {
+    justify-content: space-evenly;
+    padding: 5rem;
+    background: rgb(106,85,176);
+    background: linear-gradient(130deg, rgba(106,85,176,1) 0%, rgba(28,17,63,1) 75%, rgba(25,22,34,1) 100%); 
+}
+
+#header-item {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+    padding: 5rem;
 }
 
 #me-img {
@@ -63,44 +91,34 @@ button:hover {
 
 }
 
-#intro {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    text-align: left;
-    padding: 5rem;
-}
-
-header {
-    justify-content: space-evenly;
-    padding: 5rem;
-    background: rgb(106,85,176);
-    background: linear-gradient(130deg, rgba(106,85,176,1) 0%, rgba(28,17,63,1) 75%, rgba(25,22,34,1) 100%); 
-}
-
-h2, h3, p {
-    color: antiquewhite;
-    font-size: 3ch;
-    margin-bottom: 5px;
-}
-
-h1 {
-    color: antiquewhite;
-    font-size: 5ch;
-}
-
-#sobre-mim {
+/* About me */
+#aboutme-container {
     text-align: center;
     padding: 10rem;
     background: #191622;
 }
 
-#redes-sociais {
+#sobre-mim h2{
+    font-size: 5ch;
+    margin-bottom: 50px;
+}
+
+/* Social media */
+.socialmedia-container {
     justify-content: space-evenly;
     padding: 6rem;
     background-color: #191622;
 }
 
+.media-item {
+    text-align: center;
+}
+
+.media-img {
+    padding: 2rem;
+}
+
+/* Skills */
 #skills {
     text-align: center;
     background-color: #191622;
@@ -108,12 +126,8 @@ h1 {
     padding: 10rem;
 }
 
-footer {
-    width: 100%;
-    text-align: center;
-    height: 4rem;
-    background-color: #191622;
-    padding-top: 12px;
+.h2-skills {
+    font-size: 5ch;
 }
 
 #icon-skills {
@@ -126,26 +140,8 @@ footer {
     padding: 30px;
 }
 
-.img-skills {
-}
-
-.h2-skills {
-    font-size: 5ch;
-}
-
-.items-sociais {
-    text-align: center;
-}
-
-.img-sociais {
-    padding: 2rem;
-}
-
-.icon-nav {
-    margin-left: 2rem;
-}
-
-#portifolio{
+/* History */
+#works-container{
     background-image: url('/assets/images/fotis-fotopoulos-SyvsTmuuZyM-unsplash.jpg');
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -155,43 +151,36 @@ footer {
     padding: 10rem;
 }
 
+.works-grandson{
+    flex-direction: column;
+    margin: 0 auto;
+    width: 15rem;
+}
+
+.works-grandson a{
+    text-decoration: none;
+}
+
+.works-grandson a:hover .linha{
+    width: 100%; 
+}
+
+#works-grandson h2{
+    margin-bottom: 50px;
+    font-size: 5ch;
+}
+
+#works-grandson img{
+    width: 200px; 
+}
+
 hr{
     width: 20%;
     border: 1.5px solid white;
     transition: 0.5s ease;
 }
 
-.portifolio-items{
-    flex-direction: column;
-    margin: 0 auto;
-    width: 15rem;
-}
-
-.portifolio-items a{
-    text-decoration: none;
-}
-
-.portifolio-items a:hover .linha{
-    width: 100%;
-    
-}
-
-#portifolio h2{
-    margin-bottom: 50px;
-    font-size: 5ch;
-}
-
-#portifolio img{
-    width: 200px;
-    
-}
-
-#sobre-mim h2{
-    font-size: 5ch;
-    margin-bottom: 50px;
-}
-
-.border {
+.works-item {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -202,6 +191,7 @@ hr{
     border-radius: 20px;
 }
 
+/* Contact */
 .contact-container {
     justify-content: space-evenly;
     background-color: #191622;
@@ -232,6 +222,16 @@ hr{
     margin-top: 1rem;
 }
 
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    height: 4rem;
+    background-color: #191622;
+    padding-top: 12px;
+}
+
+/* Media Queries */
 @media (max-width: 1350px) {
     .contact-container{
         flex-direction: column;

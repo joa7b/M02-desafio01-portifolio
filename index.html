@@ -8,7 +8,7 @@
     <title>Portifólio</title>
   </head>
   <body>  
-      <nav class="flex-box">
+      <nav class="flex-box navbar-container">
         <div>
           <img src="./assets/images/logos_javascript.png" alt="Logo JavaScript" class="icon-nav">
           <img src="./assets/images/logos_typescript-icon.png" alt="Logo TypeScrypt" class="icon-nav">
@@ -18,28 +18,28 @@
         </div>
       </nav>
 
-      <header class="flex-box">
-        <div id="intro">
+      <header class="flex-box header-container">
+        <div id="header-item">
             <img src="./assets/images/1655456540476.jpg" alt="" id="me-img" />
             <h1>Olá, eu sou o João Pedro :)</h1>
             <p>Desenvolvedor FullStack</p>
-            <button><p>Download CV</p></button>
-            <button><a href="#contato"><p>Contato</p></a></button>
+            <button><a href="./assets/images/curriculo.pdf" target="_blank"><p>Currículo</p></a></button>
+            <button><a href="#contact"><p>Contato</p></a></button>
         </div>
         <img src="./assets/images/DevImage3x 1.png" alt="" id="icon-img">
       </header>
 
-      <section id="sobre-mim">
+      <section id="aboutme-container">
         <h2>Sobre Mim</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente adipisci ratione. Repudiandae, suscipit veniam dolor sed harum quam at magnam quibusdam esse incidunt soluta, expedita architecto recusandae similique totam non inventore. Rem, voluptates incidunt, tenetur quisquam perspiciatis iure veniam et omnis, fuga voluptas facilis tempore. A vel repellat natus unde exercitationem in dolorem eum dignissimos repudiandae, consequatur dolor quo! Necessitatibus repudiandae, deserunt impedit facere suscipit temporibus quidem dolor alias culpa, consequatur tenetur aut eaque. Blanditiis voluptatibus error mollitia quo eius incidunt optio minima fuga reiciendis facilis perferendis, aliquam quia veritatis iusto a corrupti dolorem accusamus aperiam voluptas! Eaque, minus?
+          Busco por meio da tecnologia ajudar a solucionar os problemas das pessoas, podendo assim colaborar para um futuro melhor. Atualmente estudo Desenvolvimento FullStack na escola Blue Edtech, e busco uma primeira oportunidade de emprego na área da tecnologia para demonstrar o que aprendi e aprender ainda mais. Onde o trabalho em equipe é fundamental para que os problemas sejam solucionados, e para tornar a internet um ambiente melhor.
         </p>
         
       </section>
 
-      <section class="flex-box" id="redes-sociais">
-        <div class="items-sociais">
-          <figure class="img-sociais">
+      <section class="flex-box socialmedia-container">
+        <div class="media-item">
+          <figure class="media-img">
             <a href="https://www.linkedin.com/in/joa7b/">
               <img src="./assets/images/akar-icons_linkedin-fill.svg" alt="Logo Linkedin">
             </a>
@@ -48,8 +48,8 @@
           <p>@joa7b</p>
         </div>
 
-        <div class="items-sociais">
-          <figure class="img-sociais">
+        <div class="media-item">
+          <figure class="media-img">
             <a href="https://www.instagram.com/_joaopb/">
               <img src="./assets/images/akar-icons_instagram-fill.svg" alt="Logo Instagram">
             </a>
@@ -58,8 +58,8 @@
           <p>@_joaopb</p>
         </div>
 
-        <div class="items-sociais">
-          <figure class="img-sociais">
+        <div class="media-item">
+          <figure class="media-img">
             <a href="https://github.com/joa7b">
               <img src="./assets/images/akar-icons_github-fill.svg" alt="Logo GitHub">
             </a>
@@ -84,11 +84,11 @@
         </div>
       </section>
 
-      <section id="portifolio">
-        <div class="border flex-box">
-          <img src="./assets/images/lf20_f28ex302.json].png" alt="">
+      <section id="works-container">
+        <div class="flex-box works-item">
+          <img src="./assets/images/lf20_f28ex302.json].png" alt="Gatos">
           <h2>Top Projetos</h2>
-          <div class="flex-box portifolio-items">
+          <div class="flex-box works-grandson">
             <a href=""><h3>projeto1<hr class="linha"></h3></a>
             <a href=""><h3>projeto2<hr class="linha"></h3></a>
             <a href=""><h3>projeto3<hr class="linha"></h3></a>
@@ -96,7 +96,7 @@
         </div>
       </section>
 
-      <section class="contact-container flex-box" id="contato">
+      <section class="contact-container flex-box" id="contact">
         <form action="">
           <h2>Contato</h2>
           <input type="text" name="" placeholder="Nome">
