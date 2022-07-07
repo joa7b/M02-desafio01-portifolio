@@ -67,7 +67,7 @@ h1 {
     justify-content: space-evenly;
     padding: 5rem;
     background: rgb(106,85,176);
-    background: linear-gradient(130deg, rgba(106,85,176,1) 0%, rgba(28,17,63,1) 75%, rgba(25,22,34,1) 100%); 
+    /* background: linear-gradient(130deg, rgba(106,85,176,1) 0%, rgba(28,17,63,1) 75%, rgba(25,22,34,1) 100%);  */
 }
 
 #header-item {
@@ -246,9 +246,26 @@ footer {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+
     header #icon-img{
         display: none;
+    }
+
+    #me-img{
+        width: 12rem;
+    }
+
+    #header-item{
+        width: 100%;
+    }
+
+    #header-item h1,p{
+        font-size: 30px;
+    }
+
+    #header-container{
+        width: 100%;
     }
 
     header #intro{
@@ -260,6 +277,70 @@ footer {
     }
 
     #portifolio{
+        display: none;
+    }
+
+    #works-container{
+        padding: 10rem 0 10rem 0;
+    }
+}
+
+@media (max-width: 750px){
+    .contact-container form{
+        width: 15rem;
+        gap: 10px;
+
+    }
+
+    .contact-container input{
+        height: 30px;
+        
+    }
+}
+
+@media (max-width: 500px){
+    .header-container{
+        padding: 0;
+    }
+
+    .aboutme-container h2,p{
+        font-size: 1.5ch;
+        text-align: justify;
+    }
+
+    #aboutme-container{
+        padding: 10rem 2rem 10rem 2rem;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .socialmedia-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .media-item p{
+        text-align: center;
+    }
+
+    #skills h2{
+        margin-bottom: 40px;
+        font-size: 4ch;
+    }
+
+    #icon-skills{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 30px;
+    }
+
+    .item-icon-skills{
+        padding: 0;
+        background: none;
+    }
+
+    .contact-container{
         display: none;
     }
 }
