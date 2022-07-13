@@ -8,7 +8,7 @@
     <title>Portifólio</title>
   </head>
   <body>  
-      <nav class="flex-box navbar-container">
+      <nav class="flex-box navbar-container white">
         <div>
           <img src="./assets/images/logos_javascript.png" alt="Logo JavaScript" class="icon-nav">
           <img src="./assets/images/logos_typescript-icon.png" alt="Logo TypeScrypt" class="icon-nav">
@@ -16,38 +16,42 @@
           <img src="./assets/images/vscode-icons_file-type-css.png" alt="Logo CSS" class="icon-nav">
           <img src="./assets/images/Vector(1).png" alt="Logo NodeJs" class="icon-nav">
         </div>
+
+        <div>
+          <p id="darkMode">Clique aqui</p>
+        </div>
       </nav>
 
       <header class="flex-box header-container">
         <div id="header-item">
             <img src="./assets/images/1655456540476.jpg" alt="" id="me-img" />
-            <h1>Olá, eu sou o João Pedro :)</h1>
-            <p>Desenvolvedor FullStack</p>
+            <h1 class="black">Olá, eu sou o João Pedro :)</h1>
+            <p class="black">Desenvolvedor FullStack</p>
             <button><a href="./assets/images/curriculo.pdf" target="_blank"><p>Currículo</p></a></button>
             <button><a href="#contact"><p>Contato</p></a></button>
         </div>
         <img src="./assets/images/DevImage3x 1.png" alt="" id="icon-img">
       </header>
 
-      <section id="aboutme-container">
+      <section id="aboutme-container" class="white">
         <div class="aboutme-item">
-          <h2>Sobre Mim</h2>
-          <p>
+          <h2 class="black">Sobre Mim</h2>
+          <p class="black">
             Busco por meio da tecnologia ajudar a solucionar os problemas das pessoas, podendo assim colaborar para um futuro melhor. Atualmente estudo Desenvolvimento FullStack na escola Blue Edtech, e busco uma primeira oportunidade de emprego na área da tecnologia para demonstrar o que aprendi e aprender ainda mais. Onde o trabalho em equipe é fundamental para que os problemas sejam solucionados, e para tornar a internet um ambiente melhor.
           </p>
         </div>
         
       </section>
 
-      <section class="flex-box socialmedia-container">
+      <section class="flex-box socialmedia-container white">
         <div class="media-item">
           <figure class="media-img">
             <a href="https://www.linkedin.com/in/joa7b/">
               <img src="./assets/images/akar-icons_linkedin-fill.svg" alt="Logo Linkedin">
             </a>
           </figure>
-          <h3>Linkedin</h3>
-          <p>@joa7b</p>
+          <h3 class="black">Linkedin</h3>
+          <p class="black">@joa7b</p>
         </div>
 
         <div class="media-item">
@@ -56,8 +60,8 @@
               <img src="./assets/images/akar-icons_instagram-fill.svg" alt="Logo Instagram">
             </a>
           </figure>
-          <h3>Instagram</h3>
-          <p>@_joaopb</p>
+          <h3 class="black">Instagram</h3>
+          <p class="black">@_joaopb</p>
         </div>
 
         <div class="media-item">
@@ -66,13 +70,13 @@
               <img src="./assets/images/akar-icons_github-fill.svg" alt="Logo GitHub">
             </a>
           </figure>
-          <h3>GitHub</h3>
-          <p>@joa7b</p>
+          <h3 class="black">GitHub</h3>
+          <p class="black">@joa7b</p>
         </div>
       </section>
 
-      <section id="skills">
-        <h2 class="h2-skills">Minhas skills</h2>
+      <section id="skills" class="white">
+        <h2 class="h2-skills black">Minhas skills</h2>
         <div id="icon-skills" class="flex-box">
           <figure class="item-icon-skills">
             <img src="./assets/images/css-skills.png" alt="">
@@ -98,7 +102,7 @@
         </div>
       </section>
 
-      <section class="contact-container flex-box" id="contact">
+      <section class="contact-container flex-box white" id="contact">
         <form action="">
           <h2>Contato</h2>
           <input type="text" name="" placeholder="Nome">
@@ -112,5 +116,7 @@
       <footer>
         <p>By: João Pedro</p>
       </footer>
+
+      <script src="./assets/js/script.js"></script>
   </body>
 </html>
